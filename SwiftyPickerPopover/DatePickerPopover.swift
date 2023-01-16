@@ -6,6 +6,7 @@
 //  Copyright © 2016 Yuta Hoshino. All rights reserved.
 //
 
+@available(iOS 13.4, *)
 public class DatePickerPopover: AbstractPopover {
     
     // MARK: Types
@@ -33,7 +34,6 @@ public class DatePickerPopover: AbstractPopover {
     /// preferred style
     private(set) var dateMode_: UIDatePicker.Mode = .date
     /// Date mode
-    @available(iOS 13.4, *)
     private(set) lazy var preferredDatePickerStyle_: UIDatePickerStyle = .automatic
     /// Limit of range
     private(set) var minimumDate: ItemType?
